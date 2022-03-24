@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <title>Project</title>
+</head>
+<link rel="stylesheet" href="styleBlog.css">
+<script src="blog.js"></script>
+
+<body>
+
+    <nav>
+
+        <div class="nav-left">
+            <img src="logo.png" alt="logo">
+
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p id="demo"></p>
+
+    </nav>
+    <div class="blog">
+        <div class="blog-form">
+            <div class="container">
+                <form onsubmit="addBlog(event)">
+                    <h1
+                        style="text-align: center; font-weight: 900; font-family: 'Oswald', sans-serif; margin: 20px 0;">
+                        ADD MY
+                        PROJECT
+                    </h1>
+
+                    <div>
+                        <label style="font-weight: bold; font-size: 20px" for="input-project">Project Name</label>
+                        <input style="
+                    background-color: rgb(232, 235, 235); 
+                    width: 100%; 
+                    padding: 10px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 4px;
+                    border: 1px solid rgb(209, 207, 207)" type="text" id="input-project" />
+                    </div>
+
+                    <div style="display: flex; flex: 100%;">
+                        <div style="margin-top: 15px;">
+                            <label for="input-start-date" style="font-weight: bold; font-size: 20px;">Start Date</label>
+                            <input type="date" id="input-start-date" style="
+                    background-color: rgb(232, 235, 235); 
+                    width: 80%; 
+                    margin-right: 50px;
+                    padding: 10px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 4px;
+                    border: 1px solid rgb(209, 207, 207)" />
+                        </div>
+
+                        <div style="margin-top: 15px;">
+                            <label for="input-end-date" style="font-weight: bold; font-size: 20px">End Date</label>
+                            <input type="date" id="input-end-date" style="
+                    background-color: rgb(232, 235, 235); 
+                    width: 100%; 
+                    padding: 10px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 4px;
+                    border: 1px solid rgb(209, 207, 207)" />
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <label for="input-description">Description</label>
+                        <textarea id="input-description" style="
+                    background-color: rgb(232, 235, 235); 
+                    width: 100%; 
+                    padding: 10px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 4px;
+                    border: 1px solid rgb(209, 207, 207);
+                    height: 100px;"></textarea>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <input type="checkbox" id="input-radio">
+                        <label style="margin-right: 60px;" for="radio">Node JS</label>
+                        <input type="checkbox" id="input-radio">
+                        <label for="input-radio">Next JS</label>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input type="checkbox" id="input-radio">
+                        <label style="margin-right: 60px;" for="input-radio">React JS</label>
+                        <input type="checkbox" id="input-radio">
+                        <label for="radio">TypeScript</label>
+                    </div>
+
+                    <div style="margin-top: 15px; font-size: 20px;">
+                        <label style="font-weight: bold;">Upload Image</label>
+                        <div class="input-blog-image-group">
+                            <label for="input-blog-image">
+                                <p>Choose File</p>
+                                <img src="assets/file.png" alt="file" />
+                            </label>
+                            <input type="file" id="input-blog-image" hidden />
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <button style="
+                    text-align: end;
+                    background-color: rgb(32, 30, 30); 
+                    color:white;
+                    margin-top: 10px;
+                    border: none;
+                    padding: 8px 30px;
+                    border-radius: 30px;
+                    font-size: 12px;
+                    cursor:pointer;">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Isi Project -->
+        <h1 style="text-align: center;">My Project</h1>
+        <div id="contents" class="blog-list">
+            <!-- dynamic content would be here -->
+            <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="assets/mobile.jpg" alt="" />
+                </div>
+                <div class="blog-content">
+                    <h1>
+                        <a href="blog-detail.html" target="_blank">IPHONE
+                        </a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        12 maret 2022 00:00 WIB | Farhan Afiffendi
+                    </div>
+                    <p>
+                        iPhone adalah merek ponsel cerdas yang dirancang dan dipasarkan oleh Apple Inc. dan menggunakan
+                        sistem operasi telepon
+                        genggam iOS. iPhone generasi pertama diumumkan oleh CEO Apple Steve Jobs pada tanggal 9 Januari
+                        2007.
+                    </p>
+                    <div class="btn-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-post">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="assets/mobile.jpg" alt="" />
+                </div>
+                <div class="blog-content">
+                    <h1>
+                        <a href="blog-detail.html" target="_blank">IPHONE
+                        </a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        12 maret 2022 00:00 WIB | Farhan Afiffendi
+                    </div>
+                    <p>
+                        iPhone adalah merek ponsel cerdas yang dirancang dan dipasarkan oleh Apple Inc. dan menggunakan
+                        sistem operasi telepon
+                        genggam iOS. iPhone generasi pertama diumumkan oleh CEO Apple Steve Jobs pada tanggal 9 Januari
+                        2007.
+                    </p>
+                    <div class="btn-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-post">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="assets/mobile.jpg" alt="" />
+                </div>
+                <div class="blog-content">
+                    <h1>
+                        <a href="blog-detail.html" target="_blank">IPHONE
+                        </a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        12 maret 2022 00:00 WIB | Farhan Afiffendi
+                    </div>
+                    <p>
+                        iPhone adalah merek ponsel cerdas yang dirancang dan dipasarkan oleh Apple Inc. dan menggunakan
+                        sistem operasi telepon
+                        genggam iOS. iPhone generasi pertama diumumkan oleh CEO Apple Steve Jobs pada tanggal 9 Januari
+                        2007.
+                    </p>
+                    <div class="btn-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-post">Delete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="assets/mobile.jpg" alt="" />
+                </div>
+                <div class="blog-content">
+                    <h1>
+                        <a href="blog-detail.html" target="_blank">IPHONE
+                        </a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        12 maret 2022 00:00 WIB | Farhan Afiffendi
+                    </div>
+                    <p>
+                        iPhone adalah merek ponsel cerdas yang dirancang dan dipasarkan oleh Apple Inc. dan menggunakan
+                        sistem operasi telepon
+                        genggam iOS. iPhone generasi pertama diumumkan oleh CEO Apple Steve Jobs pada tanggal 9 Januari
+                        2007.
+                    </p>
+                    <div class="btn-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-post">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
