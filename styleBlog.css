@@ -92,20 +92,24 @@ nav .nav-right a {
   text-align: center;
 }
 
+.blog .blog-list .blog-content h1 {
+  margin-right: 20px;
+}
+
 .blog .blog-list {
   margin-top: 80px;
   margin-bottom: 80px;
   display: flex;
   margin-left: 100px;
   align-items: left;
-  /* margin-right: px; */
+  /* margin-right: 10px; */
   /* border: 1px solid black; */
   flex-wrap: wrap;
 }
 
 .blog .blog-list .blog-list-item {
   width: 25%;
-  height: 600px;
+  height: 560px;
   padding: 15px;
   margin-right: 30px;
   box-shadow: 0 0 4px;
@@ -137,6 +141,7 @@ nav .nav-right a {
 
 .blog .blog-list .btn-group .btn-edit {
   padding: 5px 10px;
+  cursor: pointer;
   border: 0;
   justify-items: left;
   margin-right: 60px;
@@ -148,6 +153,7 @@ nav .nav-right a {
 
 .blog .blog-list .btn-group .btn-post {
   padding: 5px 10px;
+  cursor: pointer;
   border: 0;
   justify-content: right;
   border-radius: 4px;
